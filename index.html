@@ -1,0 +1,151 @@
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project</title>
+    <link rel="stylesheet" href="app.project.css">
+    &lt;!&ndash;    <script src="./dist/src/20.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/combine.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/combine.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/functions.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/app.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/compiler.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/analytics.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/debug.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/class.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/interface.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/intersection.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/section6AdvancetTypes.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/generics.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/decorators.js" defer></script>&ndash;&gt;
+    &lt;!&ndash;    <script src="./dist/src/decorators.js" defer></script>&ndash;&gt;
+    <script src="./dist/src/app.project.js" defer></script>
+</head>
+<body>
+&lt;!&ndash;<button>
+    <a href="df">asa</a>
+</button>
+<input  type="text" id="user-input" />
+<div id="decorators">
+<button id="click-me" class="click-me">
+    clickMe
+</button>
+    <form action="">
+        <input type="text" placeholder="title" id="title">
+        <input type="text" placeholder="price" id="price ">
+        <button type="submit">
+            submit
+        </button>
+    </form>
+</div>&ndash;&gt;
+
+<template id="project-input">
+    <form action="">
+        <div class="form-control">
+            <label for="title">tittle</label>
+            <input value="1" id="title" type="text">
+        </div>
+        <div class="form-control">
+            <label for="description">description</label>
+            <input value="2" id="description" type="text">
+        </div>
+        <div class="form-control">
+            <label for="people">people</label>
+            <input value="2" id="people" type="text">
+        </div>
+        <button type="submit">add project</button>
+    </form>
+    <br>
+</template>
+<template id="single-project">
+    <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+    </li>
+</template>
+<template id="project-list">
+    <section class="project">
+        <header>
+            <h2></h2>
+        </header>
+        <ul></ul>
+    </section>
+</template>
+<div id="app"></div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectManager</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>project</title>
+        <link rel="stylesheet" href="app.project.css">
+<!--            <script src="./dist/src/20.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/combine.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/combine.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/functions.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/app.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/compiler.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/analytics.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/debug.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/class.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/interface.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/intersection.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/section6AdvancetTypes.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/generics.js" defer></script>&ndash;&gt;
+            <script src="./dist/src/decorators.js" defer></script>&ndash;&gt;
+          -->
+<!--        <script src="./dist/src/decorators.js" defer></script>&ndash;&gt;-->
+        <script src="./dist/src/app.project.js" defer></script>
+    </head>
+</head>
+<body>
+<template id="project-input">
+    <form>
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input value="111111"  type="text" id="title" />
+        </div>
+        <div class="form-control">
+            <label for="description">Description</label>
+            <input  value="22222" id="description" />
+        </div>
+        <div class="form-control">
+            <label for="people">People</label>
+            <input  value="3" type="number" id="people" step="1" min="0" max="10" />
+        </div>
+        <button type="submit">ADD PROJECT</button>
+    </form>
+</template>
+<template id="single-project">
+    <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+    </li>
+</template>
+<template id="project-list">
+    <section class="projects">
+        <header>
+            <h2></h2>
+        </header>
+        <ul></ul>
+    </section>
+</template>
+<div id="app"></div>
+</body>
+</html>
